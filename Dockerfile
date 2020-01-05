@@ -25,7 +25,7 @@ RUN conda config --set show_channel_urls true && \
     conda list
 
 # launch jupyter in the local working directory that we mount
-WORKDIR /home/tmo/work
+WORKDIR /home/work
 
 ENV PATH ~/.local/bin:$PATH
 
