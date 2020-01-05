@@ -31,7 +31,7 @@ ENV PATH ~/.local/bin:$PATH
 
 RUN pip install awscli --upgrade --user
 
-RUN pip install geolib carto cartoframes==1.0b7 ipywidgets
+RUN pip install geolib carto cartoframes==1.0b7 ipywidgets boto3
 
 # set default command to launch when container is run
 #CMD ["jupyter", "lab", "--ip='0.0.0.0'", "--port=8888", "--no-browser", "--allow-root", "--NotebookApp.token=''", "--NotebookApp.password=''"]
